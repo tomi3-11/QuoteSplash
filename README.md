@@ -36,6 +36,6 @@ git checkout -b <branch name>
 git push -u origin <branch name>
 ```
 
-### 5. Step 5: Done
+### 5. Step 5: Open Github and create a Pull request with a clear comment as code explanation.
 
 # Happy Coding...
