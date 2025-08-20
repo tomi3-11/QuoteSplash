@@ -21,9 +21,9 @@ body {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0 1rem;
     /* max-width: 90%; */
-    width: 50%;
+    width: auto;
 }
 
 .q-title {
