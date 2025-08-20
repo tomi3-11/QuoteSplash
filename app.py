@@ -24,8 +24,8 @@ def get_quotes():
     return render_template('quotes.html', quotes=quotes)
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
     
     
     
