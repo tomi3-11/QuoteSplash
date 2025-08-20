@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/quotes.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="q-title">
+            Random Quote Generator
+        </div>
+
+        <div class="text">Inspiring Your Everyday.</div>
+
+        <div class="quote-box">
+            <!-- Display random Quote-->
+            <p class="r-quote">
+                <q>{{ quotes.random_q }}</q>
+            </p>
+            <!-- Display Author Name -->
+             <p class="author">
+                --{{ quotes.author }}--
+             </p>
+        </div>
+
+        <div class="btn">
+            <a href="{{ url_for('get_quotes')}}" class="refresh-btn">New Quote</a>
+        </div>
+
+    </div>
+
+{% endblock %}
