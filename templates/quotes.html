@@ -6,28 +6,20 @@
 
 {% block content %}
 
-    <div class="container">
-        <div class="q-title">
-            <q>QUOTE Splash</q>
+    <div class="container text-center">
+        <h1 class="display-4 my-4">QuoteSplash</h1>
+        <p class="lead">Your daily dose of inspiration.</p>
+
+        <div class="card my-5">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p >{{ quotes.random_q }}</p>
+                    <footer class="blockquote-footer">{{ quotes.author }}</footer>
+                </blockquote>
+            </div>
         </div>
 
-        <div class="text">Inspiring Your Everyday.</div>
-
-        <div class="quote-box">
-            <!-- Display random Quote-->
-            <p class="r-quote">
-                <q>{{ quotes.random_q }}</q>
-            </p>
-            <!-- Display Author Name -->
-             <p class="author">
-                --{{ quotes.author }}--
-             </p>
-        </div>
-
-        <div class="btn">
-            <a href="{{ url_for('get_quotes')}}" class="refresh-btn">New Quote</a>
-        </div>
-
+        <a href="{{ url_for('get_quotes')}}" class="btn btn-primary btn-lg">New Quote</a>
     </div>
 
 {% endblock %}
